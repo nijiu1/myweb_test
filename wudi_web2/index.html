@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来科技有限公司</title>
+    
+    <!-- 引入 Inter 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- 引入基础样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="imgs/logo.jpg" alt="公司logo" class="logo-image">
+                <div class="logo">未来科技</div>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">关于我们</a>
+                <a href="#portfolio" class="nav-link">作品集</a>
+                <a href="#services" class="nav-link">服务</a>
+                <a href="#contact" class="nav-link">联系</a>
+                <button class="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 轮播区 -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="imgs/未来已来.jpg" alt="未来已来" class="carousel-background">
+                <div class="carousel-content">
+                    <h1>引领未来科技</h1>
+                    <p>探索无限可能，创造智能未来</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="imgs/高级科技.jpg" alt="高级科技" class="carousel-background">
+                <div class="carousel-content">
+                    <h1>创新驱动发展</h1>
+                    <p>用科技改变世界</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="imgs/服务.jpg" alt="服务" class="carousel-background">
+                <div class="carousel-content">
+                    <h1>专业技术服务</h1>
+                    <p>为您提供最优解决方案</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-indicators"></div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+    </section>
+
+    <!-- 轮播区后面添加 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于我们</h2>
+                <div class="subtitle">About Us</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">你好，我是无敌未来科技有限公司</p>
+                    <p class="description">
+                        作为一家未来科技企业，我专注于研究宇宙帅魔领域。
+                        我热衷于未来科技领域，并且在未来科技领域有着丰富的实践经验。
+                    </p>
+                    <div class="skills">
+                        <h3>专业技能</h3>
+                        <div class="skill-tags">
+                            <div class="skill-item">
+                                <span class="skill-tag">吃</span>
+                                <div class="skill-description">
+                                    精通各种美食鉴赏，尤其擅长火锅、烧烤等领域的研究
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-tag">喝</span>
+                                <div class="skill-description">
+                                    专业品茶、咖啡，以及各类饮品的调制与品鉴
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-tag">拉</span>
+                                <div class="skill-description">
+                                    擅长社交网络运营，建立良好的人际关系网
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-tag">撒</span>
+                                <div class="skill-description">
+                                    具备出色的资源整合能力，善于项目管理与团队协作
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/logo.png" alt="公司logo" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集区域 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>案例展示</h2>
+                <div class="subtitle">Our Projects</div>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="tech">科技</button>
+                <button class="filter-btn" data-filter="research">研究</button>
+                <button class="filter-btn" data-filter="innovation">创新</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="tech">
+                    <div class="portfolio-card">
+                        <img src="imgs/1.jpg" alt="未来科技项目" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>未来科技项目</h3>
+                            <p>创新科技解决方案</p>
+                            <button class="view-project">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="research">
+                    <div class="portfolio-card">
+                        <img src="imgs/2.jpg" alt="研究成果" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>研究成果</h3>
+                            <p>前沿科技研究</p>
+                            <button class="view-project">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="innovation">
+                    <div class="portfolio-card">
+                        <img src="imgs/3.jpg" alt="创新产品" class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>创新产品</h3>
+                            <p>改变未来生活</p>
+                            <button class="view-project">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加服务区域 -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>我们的服务</h2>
+                <div class="subtitle">Our Services</div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>未来科技研发</h3>
+                    <p>专注前沿科技研究，引领行业发展方向</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>创新解决方案</h3>
+                    <p>为企业提供定制化的技术解决方案</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>技术咨询</h3>
+                    <p>专业的技术团队为您提供全方位咨询服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-form">
+                <div class="section-title">
+                    <h2>联系我们</h2>
+                    <div class="subtitle">Contact Us</div>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">姓名</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">邮箱</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder=" " required></textarea>
+                        <label for="message">留言</label>
+                    </div>
+                    <button type="submit" class="btn">发送</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>联系方式</h3>
+                    <p><i class="icon-phone"></i> 电话：400-888-8888</p>
+                    <p><i class="icon-location"></i> 地址：未来城市科技大厦888号</p>
+                    <p><i class="icon-email"></i> 邮箱：contact@future-tech.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="javascript:void(0)" class="social-link" title="小红书">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M15.5 1h-7C4.4 1 1 4.4 1 8.5v7C1 19.6 4.4 23 8.5 23h7c4.1 0 7.5-3.4 7.5-7.5v-7C23 4.4 19.6 1 15.5 1zM12 17.5c-3 0-5.5-2.5-5.5-5.5S9 6.5 12 6.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5zM12 8.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"/>
+                        </svg>
+                    </a>
+                    <a href="https://space.bilibili.com/3546754941192759?spm_id_from=333.337.0.0" 
+                       class="social-link" 
+                       title="哔哩哔哩" 
+                       target="_blank">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="social-link" title="抖音">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" 
+                       class="social-link" 
+                       title="微信" 
+                       onclick="showWechatQR()">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M8.2,15.5c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C9.1,15.1,8.7,15.5,8.2,15.5z M12.9,15.5c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C13.8,15.1,13.4,15.5,12.9,15.5z M8.2,9.6c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C9.1,9.2,8.7,9.6,8.2,9.6z M12.9,9.6c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9C13.8,9.2,13.4,9.6,12.9,9.6z M22,16.3c0-2.3-2.2-4.2-4.9-4.2c-2.7,0-4.9,1.9-4.9,4.2c0,2.3,2.2,4.2,4.9,4.2c0.6,0,1.1-0.1,1.7-0.2l1.5,0.9l-0.4-1.4C21.1,18.9,22,17.7,22,16.3z M15.3,2C9.9,2,5.5,5.6,5.5,10c0,2.5,1.3,4.7,3.3,6.2l-0.8,2.3l2.2-1.2c1.6,0.6,3.3,0.9,5.1,0.9h0.6c-0.3-0.6-0.4-1.3-0.4-2c0-3.2,3-5.8,6.7-5.8c0.4,0,0.7,0,1.1,0.1C22.6,5.7,19.3,2,15.3,2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 未来科技 版权所有
+            </div>
+        </div>
+    </footer>
+
+    <!-- 核心脚本 -->
+    <script src="main.js"></script>
+</body>
+</html> 
